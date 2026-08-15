@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-brand-50: #fdf4ff;
+  --color-brand-100: #fae8ff;
+  --color-brand-500: #a855f7;
+  --color-brand-600: #9333ea;
+  --color-brand-700: #7e22ce;
+  --color-brand-800: #6b21a8;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.status-idea { @apply bg-slate-700 text-slate-200; }
+.status-in-progress { @apply bg-amber-900/60 text-amber-200; }
+.status-finished { @apply bg-emerald-900/60 text-emerald-200; }
